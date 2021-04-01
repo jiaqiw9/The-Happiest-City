@@ -18,31 +18,20 @@ def process_line(line):
         total_score = 0
 
         coordinate = tweet["value"]["geometry"]["coordinates"]
-        if coordinate[1] <= -37.500000 and coordinate[1] > -37.650000:
-            area += "A"
-        elif coordinate[1] <= -37.650000 and coordinate[1] > -37.800000:
-            area += "B"
-        elif coordinate[1] <= -37.800000 and coordinate[1] > -37.950000:
-            area += "C"
-        elif coordinate[1] <= -37.950000 and coordinate[1] > -38.100000:
-            area += "D"
-        if coordinate[0] > 144.700000 and coordinate[0] <= 144.850000:
-            area += "1"
-        elif coordinate[0] > 144.850000 and coordinate[0] <= 145.000000:
-            area += "2"
-        elif coordinate[0] > 145.000000 and coordinate[0] <= 145.150000:
-            area += "3"
-        elif coordinate[0] > 145.150000 and coordinate[0] <= 145.300000:
-            area += "4"
-        elif coordinate[0] > 145.300000 and coordinate[0] <= 145.450000:
-            area += "5"
+        for feature in melbGrid_json["features"]:
+            if feature["properties"]["xmin"] < coordinate[0] <= feature["properties"]["xmax"] and feature["properties"]["ymin"] < coordinate[1] <= feature["properties"]["ymax"]:
+                area = feature["properties"]["id"]
 
         if area in cell_score:    
             for word, score in score_dict.items():
-                pattern = r' ' + word + r'[\!,\?\.\'"]'
-                total_score += score * len(re.findall(pattern, tweet["value"]["properties"]["text"]))
+                pattern = r'[ \'"]' + word + r'[ \!,\?\.\'"]'
+                total_score += score * len(re.findall(pattern, tweet["value"]["properties"]["text"].lower()))
             cell_score[area]["tweets"] += 1
             cell_score[area]["score"] += total_score
+
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
 
 # read AFINN dictionary
 score_dict = dict()
@@ -58,10 +47,18 @@ with open('melbGrid.json') as melbGrid:
     for feature in melbGrid_json["features"]:
         cell_score[feature["properties"]["id"]] = {"tweets":0, "score":0}
 
-# read json
-data_set = 'tinyTwitter.json'
+# read and process json
+data_set = 'bigTwitter.json'
+line_count = 0
 with open(data_set) as Twitter:
     for line in Twitter:
-        process_line(line)
-print(cell_score)
-
+        if line_count % size == rank:
+            process_line(line)
+        line_count += 1
+cell_score = comm.gather(cell_score, root = 0)
+if rank == 0:
+    for cell_score_ in cell_score[1:]:
+        for area, total_score in cell_score_.items():
+            cell_score[0][area]["tweets"] += cell_score_[area]["tweets"]
+            cell_score[0][area]["score"] += cell_score_[area]["score"]
+    print(cell_score[0])
