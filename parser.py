@@ -67,20 +67,67 @@ def master(comm, file_name):
     rank, size = comm.Get_rank(), comm.Get_size()
 
     final_result = parse_tweets(file_name, rank, comm)
-    print(final_result)
+
+    if size != 1:
+        print("Number of processes: {}".format(size))
+        slave_results = collect_results(comm)
+        add_slave_output(slave_results, final_result)
+
+    complete_jobs(comm, size - 1)
+    print_results(final_result)
     return
+
+
+def complete_jobs(comm, n_slaves):
+    '''
+    Notifies all slaves that the process is complete
+    '''
+    for i in range(n_slaves):
+        slave_rank = i + 1
+        comm.send('complete', dest=slave_rank, tag=slave_rank)
+        print("Notifying slave {} that the process is complete".format(slave_rank))
 
 
 def collect_results(comm):
+    n_slaves = comm.Get_size() - 1
+    # Initialize a fresh dictionary to store the results from all the slaves in
+    slave_results = setup_grid_scores()
+
+    for i in range(n_slaves):
+        slave_rank = i + 1
+        comm.send('return', dest = slave_rank, tag = slave_rank)
+        print("Calling slave {} to return data".format(slave_rank))
+    
+    for i in range(n_slaves):
+        slave_rank = i + 1
+        slave_output = comm.recv(source=slave_rank, tag=0)
+        add_slave_output(slave_output, slave_results)
+        print("Succesfully received output from slave {}".format(slave_rank))
+
+    return slave_results
+
+
+def add_slave_output(slave_output, slave_results):
+    for cell in slave_output:
+        slave_results[cell]['count'] += slave_output[cell]['count']
+        slave_results[cell]['score'] += slave_output[cell]['score']
     return
+
 
 def slave(comm, file_name):
     rank, size = comm.Get_rank(), comm.Get_size()
 
     # Do work
     output = parse_tweets(file_name, rank, comm)
-    print(output)
-    return
+
+    # Await call to return results to master
+    while True:
+        incoming_msg = comm.recv(source=0, tag=rank)
+        if incoming_msg == 'return':
+            comm.send(output, dest=0, tag=0)
+        elif incoming_msg == 'complete':
+            exit(0)
+
 
 def open_file(comm, fname):
     print("trying to open ", fname)
@@ -122,7 +169,7 @@ def parse_tweets(file_name: str, rank, comm):
         for tweet in tweets:
             cell, score = parse_single_tweet(tweet, word_scores)
             process_score(score, cell, grid_scores)
-            print(" Cell: ", cell, " Sentiment score: ", score)
+            # print(" Cell: ", cell, " Sentiment score: ", score)
     file.Close()
     return grid_scores
 
@@ -138,7 +185,7 @@ def parse_single_tweet(tweet, word_scores):
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
     cell = get_grid_cell(long, lat)
-    print(decoded)
+    # print(decoded)
     return cell, score
 
 
@@ -181,6 +228,10 @@ def get_grid_cell(x, y):
             name = Y_ORDS[y_index] + X_ORDS[x_index]
             return name
 
+def print_results(result):
+    for cell in result:
+        print("{}, Tweet count: {}, Sentiment score: {}".format(cell, result[cell]['count'], result[cell]['score']))
+
 
 if __name__ == "__main__":
     file_name = sys.argv[1:]
@@ -189,6 +240,9 @@ if __name__ == "__main__":
     rank = comm.Get_rank()
     print(fname)
     if rank == 0:
+        start_time = time.time()
+        print("Starting execution at {}".format(time.asctime()))
         master(comm, fname)
+        print("Finished execution at {} - took {}".format(time.asctime(), time.time() - start_time))
     else:
         slave(comm, fname)
