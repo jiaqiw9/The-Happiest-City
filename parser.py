@@ -62,17 +62,28 @@ def setup_grid_scores():
 
 def master(comm, file_name):
     '''
-
+    Main function for the master processor
     '''
     rank, size = comm.Get_rank(), comm.Get_size()
+
+    final_result = parse_tweets(file_name, rank, comm)
+    print(final_result)
     return
 
 
 def collect_results(comm):
     return
 
+def slave(comm, file_name):
+    rank, size = comm.Get_rank(), comm.Get_size()
+
+    # Do work
+    output = parse_tweets(file_name, rank, comm)
+    print(output)
+    return
 
 def open_file(comm, fname):
+    print("trying to open ", fname)
     file = MPI.File.Open(comm, fname, MPI.MODE_RDONLY)
     file_size = MPI.File.Get_size(file)
     return file, file_size
@@ -171,22 +182,13 @@ def get_grid_cell(x, y):
             return name
 
 
-def main(argv, comm):
-    file_name = argv[0]
-    print(file_name)
-    rank = comm.Get_rank()
-    result = parse_tweets(file_name, rank, comm)
-    print(result)
-
-
 if __name__ == "__main__":
     file_name = sys.argv[1:]
     comm = MPI.COMM_WORLD
-
-    main(sys.argv[1:], comm)
-
-    # comm = MPI.COMM_WORLD
-    # rank = comm.Get_rank()
-
-    # if rank == 0:
-    #     master(comm, file_name)
+    fname = file_name[0]
+    rank = comm.Get_rank()
+    print(fname)
+    if rank == 0:
+        master(comm, fname)
+    else:
+        slave(comm, fname)
