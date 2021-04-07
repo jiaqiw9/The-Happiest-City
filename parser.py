@@ -7,7 +7,7 @@ import math
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
 
 # Regex to find individual doc.
-DOC_REGEX = b'doc":.*?"text".*?".*?"(?:,).*"lang".*?,'
+DOC_REGEX = b'id":.*?"text".*?".*?"(?:,).*"doc".*?,'
 
 COORD_REGEX = b'(?:"coordinates":)\[(.*?),(.*?)\]'
 
@@ -33,10 +33,12 @@ def main(argv):
     docs = re.findall(DOC_REGEX, buffer, re.I)
     for doc in docs:
         text = re.search(TEXT_REGEX, doc).group(1)
+        decoded = text.decode("utf-8")
         coordinates = re.search(COORD_REGEX, doc)
-        lat = float(coordinates.group(1))
-        long = float(coordinates.group(2))
-        print(text, lat, long)
+        long = float(coordinates.group(1))
+        lat = float(coordinates.group(2))
+        print(decoded)
+        print("Coordinates: ",long, lat)
     file.Close()
 
 
