@@ -3,14 +3,23 @@ import re, time
 import sys
 import math
 
+# Constants for assigning a coordinate to a region on the GRID
+X_MIN, X_MAX = 144.7, 145.45 
+Y_MIN, Y_MAX = -37.5, -38.1
+Y_ORDS = ['A','B','C','D']
+X_ORDS = ['1','2','3','4','5']
+INTERVAL = 0.15
+
+
+# REGEX
 # Regex for Tweet text.
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
-
 # Regex to find individual tweets.
 TWEET_REGEX = b'id":.*?"text".*?".*?"(?:,).*"doc".*?,'
-
+# Regex to extract the coordinate from a tweet.
 COORD_REGEX = b'(?:"coordinates":)\[(.*?),(.*?)\]'
 
+# MAX buffer size
 MAX_BUFF = int((2**31 - 1) / 2)
 
 def read_AFINN(filename):
@@ -53,8 +62,24 @@ def calculate_score(word_scores, tweet):
 
 # Adds the score to the correct grid's overall score.
 def process_score(score, lat, long, grid_scores):
+    x_min, x_max = 144.7, 145.45
+    y_min, y_max = -37.5, -38.1
     return
 
+def get_grid_cell(x, y):
+    if y > Y_MIN or y < Y_MAX or x < X_MIN or x > X_MAX or (y > -37.8 and x > 145.3) or (y < -37.95 and x < 145):
+        print("out of bounds")
+        return None
+    else:
+        y_index = math.floor(abs(y - Y_MIN) / INTERVAL)
+        x_index = math.floor(abs(x - X_MIN) / INTERVAL)
+        # Error
+        if x_index > 4 or y_index > 3:
+            print("An error occurred when finding the grid associated with the point ({},{})".format(y, x))
+            return None
+        else:
+            name = Y_ORDS[y_index] + X_ORDS[x_index]
+            return name
 
 def main(argv, comm):
     file_name = argv[0]
@@ -95,8 +120,9 @@ def main(argv, comm):
             coordinates = re.search(COORD_REGEX, tweet)
             long = float(coordinates.group(1))
             lat = float(coordinates.group(2))
+            cell = get_grid_cell(long, lat)
             print(decoded)
-            print("Coordinates: ",long, lat, " Sentiment score: ", score)
+            print("Coordinates: ",long, lat, " Cell: ",cell ," Sentiment score: ", score)
     file.Close()
 
 
