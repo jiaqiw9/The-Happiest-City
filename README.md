@@ -30,6 +30,9 @@ Pattern matching is done in O(n + m + z) time; where **n** is the _length_ of th
 
 To run this code locally, first ensure you have some form of mpi installed (i.e. openMPI, mpich)
 On linux this can be done easily through a package manager:
+
 `sudo apt install mpich`
+
 Then you can run the program as follows:
+
 `mpiexec -np <num processors> python3 run.py <Path/To/twitter.json> `
