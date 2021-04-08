@@ -11,7 +11,7 @@ score for the given cells and hence to calculate the area of Melbourne that has 
 
 ### Versions
 
-1. v1.0 - Bing's implementation
+  - v1.0 - Bing's implementation
 
 ### Overview
 
@@ -20,9 +20,12 @@ run.py is called by each worker and the resulting process behaviour is dependent
 The data file, twitter.json, is divided into even-sized chunks and each chunk is assigned to a worker.
 The master process then collects and aggregates the results of this processing and returns the result.
 
+
 'AFINN.txt' contains a dictionary of words and their asossicated sentiment score (i.e. abandon -2)
 The sentiment for a given tweet is calculated as the number of words in AFINN.txt that exactly match strings in the tweet.
 Strings with punctuation at the end are still considered an exact match - i.e. by this definition, 'cheese' is a match in the string 'i like cheese!'  
+
+
 Pattern matching is implemented using a modified version of **Aho-Corasick**. As we only need to construct the autmaton once, Aho-Corasick allows us to perform the calculation of a tweet's sentiment in O(n + z) time; where **n** is the _length_ of the tweet and **z** is the total number of occurences of words from AFINN.txt in the tweet. This enables the performance of this implementation to be extremely fast. 
 
 
