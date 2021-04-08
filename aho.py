@@ -5,6 +5,7 @@ class AhoNode:
         self.out = []
         self.fail = None
 
+
 def aho_create_forest(patterns):
     root = AhoNode()
 
@@ -49,7 +50,17 @@ def aho_find_all(s, root):
         node = node.goto[s[i]]
         for pattern in node.out:
             # Only match complete matches
-            if i + 1 == len(s) or s[i+1] == " " or s[i+1] == "," or s[i+1] == "!" or s[i+1] == "?" or s[i+1] == "." or s[i+1]=="'" or s[i+1] == "'":
+            if valid_pattern(s, i, pattern):
                 patterns.append(pattern)
                 # print("Matched with " + pattern)
     return patterns
+
+
+def valid_right(s, i):
+    return i + 1 == len(s) or s[i+1] == " " or s[i+1] == "," or s[i+1] == "!" or s[i+1] == "?" or s[i+1] == "." or s[i+1] == "'" or s[i+1] == "'"
+
+def valid_left(s, i, pattern):
+    return i - len(pattern) == 0 or s[i-len(pattern)] == " "
+
+def valid_pattern(s, i, pattern):
+    return valid_left(s, i, pattern) and valid_right(s, i)
