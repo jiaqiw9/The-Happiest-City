@@ -1,10 +1,6 @@
-import logging
 from mpi4py import MPI
-import re
-import time
-import sys
-import math
-import aho
+import re, time, math
+import aho, grid
 from logger import Logger
 
 # Constants for assigning a coordinate to a region on the GRID
@@ -173,7 +169,8 @@ def parse_tweets(file_name: str, rank, comm, size):
     # Set-up the data-structures needed to process the json
     word_scores = setup_AFINN(rank, comm)
     root = aho.aho_create_statemachine(word_scores.keys())
-    grid_scores = setup_grid_scores()
+    grid_scores = grid.make_grid_dict()
+    # grid_scores = setup_grid_scores()
     # Open the .json
     file, file_size = open_file(comm, file_name, rank)
     if not file:
@@ -203,12 +200,12 @@ def parse_tweets(file_name: str, rank, comm, size):
 def find_and_process_tweets(buffer, word_scores, grid_scores, root):
     tweets = re.findall(TWEET_REGEX, buffer, re.I)
     for tweet in tweets:
-        cell, score = parse_single_tweet(tweet, word_scores, root)
+        cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
         if cell:
             process_score(score, cell, grid_scores)
 
 
-def parse_single_tweet(tweet, word_scores, root):
+def parse_single_tweet(tweet, word_scores, root, grid_dict):
     '''
     Extracts the contents and co-ordinates of the tweet and parses the result
     '''
@@ -224,7 +221,8 @@ def parse_single_tweet(tweet, word_scores, root):
         return None, 0
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
-    cell = get_grid_cell(lat, long)
+    cell = grid.which_grid_cell(lat, long, grid_dict)
+    # cell = get_grid_cell(lat, long)
     return cell, score
 
 
