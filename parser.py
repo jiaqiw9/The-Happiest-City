@@ -3,6 +3,7 @@ import re
 import time
 import sys
 import math
+import aho
 
 # Constants for assigning a coordinate to a region on the GRID
 X_MIN, X_MAX = 144.7, 145.45
@@ -142,6 +143,8 @@ def parse_tweets(file_name: str, rank, comm):
     size = comm.Get_size()
     # Set-up
     word_scores = setup_AFINN(rank, comm)
+    root = aho.aho_create_statemachine(word_scores.keys())
+
     grid_scores = setup_grid_scores()
     # print("Doing work on processor {}".format(rank))
 
@@ -174,8 +177,7 @@ def parse_tweets(file_name: str, rank, comm):
             tweets = re.findall(TWEET_REGEX, buffer, re.I) ##bottleneck here
             # # # Process each tweet
             for tweet in tweets:
-                cell, score = "c2"
-                cell, score = parse_single_tweet(tweet, word_scores)
+                cell, score = parse_single_tweet(tweet, word_scores, root)
                 process_score(score, cell, grid_scores)
                 # print(" Cell: ", cell, " Sentiment score: ", score)
         except:
@@ -185,32 +187,31 @@ def parse_tweets(file_name: str, rank, comm):
 
 
 
-def parse_single_tweet(tweet, word_scores):
+def parse_single_tweet(tweet, word_scores, root):
     '''
     Extracts the contents and co-ordinates of the tweet and parses the result
     '''
     text = re.search(TEXT_REGEX, tweet).group(1)
     decoded = text.decode("utf-8")
-    score = calculate_score(word_scores, decoded.lower())
+    score = calculate_score(word_scores, decoded.lower(), root)
     coordinates = re.search(COORD_REGEX, tweet)
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
     cell = get_grid_cell(lat, long)
     return cell, score
-    # return "C2", 1
 
-
-# -------CURRENT BOTTLENECK -> algorithm is O(N K) where K is the number of words in AFFIN ----
-def calculate_score(word_scores: dict, tweet: str) -> int:
+# Pattern matching using Aho-Corasick
+def calculate_score(word_scores: dict, tweet: str, root) -> int:
     '''
     Calculates the sentiment score of a tweet
     '''
-    # score = 0
-    # for word in word_scores:
-    #     if word in tweet:
-    #         score += word_scores[word]
-    # return score
-    return 1
+    score = 0
+    patterns_found = aho.aho_find_all(tweet, root)
+    for pattern in patterns_found:
+        score += word_scores[pattern]
+    return score
+
+
 
 def process_score(score, grid_cell, grid_scores):
     '''

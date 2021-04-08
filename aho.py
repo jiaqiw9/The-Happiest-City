@@ -51,29 +51,5 @@ def aho_find_all(s, root):
             # Only match complete matches
             if i + 1 == len(s) or s[i+1] == " " or s[i+1] == "," or s[i+1] == "!" or s[i+1] == "?" or s[i+1] == "." or s[i+1]=="'" or s[i+1] == "'":
                 patterns.append(pattern)
-                print("Matched with " + pattern)
+                # print("Matched with " + pattern)
     return patterns
-
-
-def read_AFINN(filename: str) -> dict:
-    '''
-    Converts AFINN.txt into a dictionary mapping words to sentiment scores
-    '''
-    # read AFINN dictionary
-    word_scores = {}
-    with open(filename) as AFINN:
-        for line in AFINN:
-            line_split = line.rsplit(maxsplit=1)
-            word, score = line_split[0], int(line_split[1])
-            word_scores[word] = score
-    return word_scores
-
-
-strings = ["I can't stand being cancelled", "I can't be cancelled"]
-AFINN = read_AFINN("AFINN.txt")
-root = aho_create_statemachine(AFINN.keys())
-
-for i in strings:
-    print("String to search: ", i)
-    found = aho_find_all(i, root)
-    print(found)
