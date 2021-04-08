@@ -16,9 +16,10 @@ INTERVAL = 0.15
 # Regex for Tweet text.
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
 # Regex to find individual tweets.
-TWEET_REGEX = b'id":.*?"text".*?".*?"(?:,).*"doc".*?,'
+TWEET_REGEX = b'doc":.*?"text".*?".*?"(?:,).*"attributes".*?'
 # Regex to extract the coordinate from a tweet.
-COORD_REGEX = b'(?:"coordinates":)\[(.*?),(.*?)\]'
+COORD_REGEX = b'"geo".*?(?:"coordinates":)\[(.*?),(.*?)\]'
+# Regex for each doc
 
 # MAX buffer size
 MAX_BUFF = int((2**31 - 1) / 2)
@@ -49,7 +50,7 @@ def setup_AFINN(rank, comm):
     word_scores = comm.bcast(word_scores, root=0)
     return word_scores
 
-
+# Bottleneck not here
 def setup_grid_scores():
     grid_scores = {}
     keys = ["A1", "A2", "A3", "A4", 'B1', 'B2',
@@ -85,28 +86,29 @@ def complete_jobs(comm, n_slaves):
     for i in range(n_slaves):
         slave_rank = i + 1
         comm.send('complete', dest=slave_rank, tag=slave_rank)
-        print("Notifying slave {} that the process is complete".format(slave_rank))
+        # print("Notifying slave {} that the process is complete".format(slave_rank))
 
 
+# Bottleneck not hjere
 def collect_results(comm):
     n_slaves = comm.Get_size() - 1
     # Initialize a fresh dictionary to store the results from all the slaves in
     slave_results = setup_grid_scores()
-
+    
     for i in range(n_slaves):
         slave_rank = i + 1
         comm.send('return', dest = slave_rank, tag = slave_rank)
-        print("Calling slave {} to return data".format(slave_rank))
+        # print("Calling slave {} to return data".format(slave_rank))
     
     for i in range(n_slaves):
         slave_rank = i + 1
         slave_output = comm.recv(source=slave_rank, tag=0)
         add_slave_output(slave_output, slave_results)
-        print("Succesfully received output from slave {}".format(slave_rank))
+        # print("Succesfully received output from slave {}".format(slave_rank))
 
     return slave_results
 
-
+# Bottleneck not here
 def add_slave_output(slave_output, slave_results):
     for cell in slave_output:
         slave_results[cell]['count'] += slave_output[cell]['count']
@@ -141,31 +143,35 @@ def parse_tweets(file_name: str, rank, comm):
     # Set-up
     word_scores = setup_AFINN(rank, comm)
     grid_scores = setup_grid_scores()
-    print("Doing work on processor {}".format(rank))
+    # print("Doing work on processor {}".format(rank))
 
     # Open the .json containing all tweets
     file, file_size = open_file(comm, file_name)
-    print("{} is {} bytes.".format(file_name, file_size))
+    # print("{} is {} bytes.".format(file_name, file_size))
 
     # Chunk of file to read
-    chunk_size = int(math.ceil(file_size/size))
-    chunk_offset = chunk_size * rank  # This is where the chunk to be read starts
-
-    print("Using chunks of size {} to read in the .json. Chunk offset is {}".format(
-        chunk_size, chunk_offset))
+    if (size == 1 or size -1 != rank):
+        chunk_size = int(math.ceil(file_size/size))
+        chunk_offset = chunk_size * rank  # This is where the chunk to be read starts
+    else:
+        chunk_size = (file_size % int(math.ceil(file_size/size)))
+        chunk_offset = file_size - chunk_size - 1
+    # print("Using chunks of size {} to read in the .json. Chunk offset is {}".format(
+        # chunk_size, chunk_offset))
     # Find how many buffers are needed to read the chunk in
     n_buffers = int(math.ceil(chunk_size / MAX_BUFF))
     buffer_size = int(math.ceil(chunk_size / n_buffers))
-    print("Number of buffers to use: {}. Buffer size: {}".format(
-        n_buffers, buffer_size))
+    # print("Number of buffers to use: {}. Buffer size: {}".format(
+        # n_buffers, buffer_size))
     for i in range(n_buffers):
+        # print("in n_buffers")
         buffer = bytearray(buffer_size)
         buffer_offset = chunk_offset + (i * buffer_size)
-        # Read the file into the buffer
+        # # Read the file into the buffer
         file.Read_at_all(buffer_offset, buffer)
-        # Find all the tweets contained in the buffer:
+        # # Find all the tweets contained in the buffer:
         tweets = re.findall(TWEET_REGEX, buffer, re.I)
-        # Process each tweet
+        # # Process each tweet
         for tweet in tweets:
             cell, score = parse_single_tweet(tweet, word_scores)
             process_score(score, cell, grid_scores)
@@ -173,7 +179,7 @@ def parse_tweets(file_name: str, rank, comm):
     file.Close()
     return grid_scores
 
-
+# Bottleneck not here
 def parse_single_tweet(tweet, word_scores):
     '''
     Extracts the contents and co-ordinates of the tweet and parses the result
@@ -184,8 +190,9 @@ def parse_single_tweet(tweet, word_scores):
     coordinates = re.search(COORD_REGEX, tweet)
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
-    cell = get_grid_cell(long, lat)
+    cell = get_grid_cell(lat, long)
     # print(decoded)
+    # print(long, lat)
     return cell, score
 
 
@@ -232,13 +239,10 @@ def print_results(result):
     for cell in result:
         print("{}, Tweet count: {}, Sentiment score: {}".format(cell, result[cell]['count'], result[cell]['score']))
 
-
-if __name__ == "__main__":
-    file_name = sys.argv[1:]
+def main(argv):
+    fname = argv[0]
     comm = MPI.COMM_WORLD
-    fname = file_name[0]
     rank = comm.Get_rank()
-    print(fname)
     if rank == 0:
         start_time = time.time()
         print("Starting execution at {}".format(time.asctime()))
