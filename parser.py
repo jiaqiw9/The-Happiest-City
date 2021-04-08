@@ -56,6 +56,9 @@ def setup_grid_scores():
 
 
 def run_main(comm, file_name):
+    '''
+    Main function for slaves and master - using mpi.gather to assemble results easily
+    '''
     rank, size = comm.Get_rank(), comm.Get_size()
     output = parse_tweets(file_name, rank, comm, size)
     logger.log("Worker {} finished.".format(rank))
@@ -69,6 +72,9 @@ def run_main(comm, file_name):
     return
 
 def gather_output(output_list):
+    '''
+    Collates output from each slave into one dictionary
+    '''
     master_output = output_list[0]
     for i in range(1, len(output_list)):
         add_slave_output(output_list[i], master_output)
@@ -101,6 +107,9 @@ def which_chunk(file_size, size, rank):
     return chunk_size, chunk_offset, n_buffers
 
 def write_to_buffer(file, chunk_size, n_buffers, chunk_offset, buffer_index):
+    '''
+    Writes a portion of the file chunk to a buffer and returns the buffer for processing
+    '''
     buffer_size = int(math.ceil(chunk_size / n_buffers))
     buffer = bytearray(buffer_size)
     buffer_offset = chunk_offset + (buffer_index * buffer_size)
@@ -108,6 +117,9 @@ def write_to_buffer(file, chunk_size, n_buffers, chunk_offset, buffer_index):
     return buffer
 
 def parse_tweets(file_name: str, rank, comm, size):
+    '''
+    Main function to iterate through a chunk of tweets and extract sentiment/location from each tweet
+    '''
     # Set-up the data-structures needed to process the json
     word_scores = setup_afinn(rank, comm)
     root = aho.aho_create_statemachine(word_scores.keys())
@@ -118,7 +130,6 @@ def parse_tweets(file_name: str, rank, comm, size):
         return grid_scores
     # Chunk of file to read
     chunk_size, chunk_offset, n_buffers = which_chunk(file_size, size, rank)
-
     logger.log("Commencing processing of chunk beginning at {} of {} of size {} at worker {}".format(
         chunk_offset, file_size, chunk_size, rank))
     for i in range(n_buffers):
