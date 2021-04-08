@@ -55,77 +55,29 @@ def setup_grid_scores():
     return grid_scores
 
 
-def master(comm, file_name):
-    '''
-    Main function for the master processor
-    '''
+def run_main(comm, file_name):
     rank, size = comm.Get_rank(), comm.Get_size()
-    final_result = parse_tweets(file_name, rank, comm, size)
+    output = parse_tweets(file_name, rank, comm, size)
+    logger.log("Worker {} finished.".format(rank))
+    output_list = comm.gather(output, root=0)
+    if rank == 0: 
+        if size != 1:
+            logger.log("Master process completed. Now gathering return data from all slaves")
+            output = gather_output(output_list)    
+            logger.log("Succesfully combined output from all slaves")
+        print_results(output)
+    return
 
-    if size != 1:
-        logger.log("Number of processes: {}".format(size))
-        slave_results = collect_results(comm)
-        add_slave_output(slave_results, final_result)
-        complete_jobs(comm, size - 1)
-
-    # Log the results to stdout
-    print_results(final_result)
-
-
-def complete_jobs(comm, n_slaves):
-    '''
-    Notifies all slaves that the process is complete
-    '''
-    for i in range(n_slaves):
-        slave_rank = i + 1
-        comm.send('complete', dest=slave_rank, tag=slave_rank)
-        logger.log(
-            "Notifying slave {} that the process is complete".format(slave_rank))
-
-
-def collect_results(comm):
-    '''
-    Calls each slave and gathers the results from all slaves into one dictionary
-    '''
-    n_slaves = comm.Get_size() - 1
-    # Initialize a fresh dictionary to store the results from all the slaves in
-    slave_results = setup_grid_scores()
-
-    for i in range(n_slaves):
-        slave_rank = i + 1
-        comm.send('return', dest=slave_rank, tag=slave_rank)
-        logger.log("Calling slave {} to return data".format(slave_rank))
-
-    for i in range(n_slaves):
-        slave_rank = i + 1
-        slave_output = comm.recv(source=slave_rank, tag=0)
-        add_slave_output(slave_output, slave_results)
-        logger.log("Succesfully received output from slave {}".format(slave_rank))
-
-    return slave_results
-
+def gather_output(output_list):
+    master_output = output_list[0]
+    for i in range(1, len(output_list)):
+        add_slave_output(output_list[i], master_output)
+    return master_output
 
 def add_slave_output(slave_output, slave_results):
     for cell in slave_output:
         slave_results[cell]['count'] += slave_output[cell]['count']
         slave_results[cell]['score'] += slave_output[cell]['score']
-
-
-def slave(comm, file_name):
-    '''
-    Main function responsible for dictating behaviour of workers
-    '''
-    rank, size = comm.Get_rank(), comm.Get_size()
-    # Do work
-    output = parse_tweets(file_name, rank, comm, size)
-    # Await call to return results to master
-    while True:
-        incoming_msg = comm.recv(source=0, tag=rank)
-        if isinstance(incoming_msg, str):
-            if incoming_msg == 'return':
-                comm.send(output, dest=0, tag=0)
-            elif incoming_msg == 'complete':
-                exit(0)
 
 
 def open_file(comm, fname, rank):
@@ -257,7 +209,7 @@ def main(argv):
     if rank == 0:
         start_time = time.time()
         logger.log("Starting execution at {}".format(time.asctime()))
-        master(comm, fname)
+        run_main(comm, fname)
         logger.log("Finished execution at {} - took {}".format(time.asctime(), time.time() - start_time))
     else:
-        slave(comm, fname)
+        run_main(comm, fname)
