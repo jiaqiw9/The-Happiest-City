@@ -3,36 +3,26 @@ import re, time, math
 import aho, grid
 from logger import Logger
 
-# Constants for assigning a coordinate to a region on the GRID
-X_MIN, X_MAX = 144.7, 145.45
-Y_MIN, Y_MAX = -37.5, -38.1
-Y_ORDS = ['A', 'B', 'C', 'D']
-X_ORDS = ['1', '2', '3', '4', '5']
-INTERVAL = 0.15
-
-
-# REGEX
 # Regex for Tweet text.
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
 # Regex to find individual tweets.
 TWEET_REGEX = b'doc":.*?"text".*?".*?"(?:,).*"lang".*?,'
 # Regex to extract the coordinate from a tweet.
-COORD_REGEX = b'"geo".*?(?:"coordinates":)\[(.*?),(.*?)\]'
+COORD_REGEX = b'"geo".*?(?:"coordinates":)\[+(.*?),(.*?)\]+'
 
 # MAX buffer size
 MAX_BUFF = int((2**31 - 1) / 2)
-
 # Initalize logger
 logger = Logger("master")
 
 
-def read_AFINN(filename: str) -> dict:
+def read_afinn(filename: str) -> dict:
     '''
     Converts AFINN.txt into a dictionary mapping words to sentiment scores
     '''
     # read AFINN dictionary
     word_scores = {}
-    with open(filename) as AFINN:
+    with open(filename, 'r') as AFINN:
         for line in AFINN:
             line_split = line.rsplit(maxsplit=1)
             word, score = line_split[0], int(line_split[1])
@@ -40,12 +30,12 @@ def read_AFINN(filename: str) -> dict:
     return word_scores
 
 
-def setup_AFINN(rank, comm):
+def setup_afinn(rank, comm):
     '''
     Sends the map of words to sentiment scores to all nodes
     '''
     if rank == 0:
-        word_scores = read_AFINN("AFINN.txt")
+        word_scores = read_afinn("AFINN.txt")
     else:
         word_scores = None
     word_scores = comm.bcast(word_scores, root=0)
@@ -167,10 +157,9 @@ def write_to_buffer(file, chunk_size, n_buffers, chunk_offset, buffer_index):
 
 def parse_tweets(file_name: str, rank, comm, size):
     # Set-up the data-structures needed to process the json
-    word_scores = setup_AFINN(rank, comm)
+    word_scores = setup_afinn(rank, comm)
     root = aho.aho_create_statemachine(word_scores.keys())
     grid_scores = grid.make_grid_dict()
-    # grid_scores = setup_grid_scores()
     # Open the .json
     file, file_size = open_file(comm, file_name, rank)
     if not file:
@@ -180,19 +169,16 @@ def parse_tweets(file_name: str, rank, comm, size):
 
     logger.log("Commencing processing of chunk beginning at {} of {} of size {} at worker {}".format(
         chunk_offset, file_size, chunk_size, rank))
-    
     for i in range(n_buffers):
         try:
             # Read the file into the buffer
             buffer = write_to_buffer(file, chunk_size, n_buffers, chunk_offset, i)
+        except MemoryError:
+            logger.log_error("Could not write file portion {}/{} to buffer at worker {}".format(i+1, n_buffers, rank))
+        else:
             # Find all the tweets contained in the buffer and process them
             find_and_process_tweets(buffer, word_scores, grid_scores, root)
-            logger.log(
-                "Succesfully parsed file portion {}/{} at worker {}".format(i+1, n_buffers, rank))
-
-        except ValueError:
-            logger.log_error(
-                "Can't open file portion {}/{} at worker {}".format(i+1, n_buffers, rank))
+            logger.log("Succesfully parsed file portion {}/{} at worker {}".format(i+1, n_buffers, rank))
     file.Close()
     return grid_scores
 
@@ -200,10 +186,13 @@ def parse_tweets(file_name: str, rank, comm, size):
 def find_and_process_tweets(buffer, word_scores, grid_scores, root):
     tweets = re.findall(TWEET_REGEX, buffer, re.I)
     for tweet in tweets:
-        cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
-        if cell:
-            process_score(score, cell, grid_scores)
-
+        try:
+            cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+            if cell:
+                process_score(score, cell, grid_scores)
+        except LookupError:
+            logger.log_error("Could not process tweet")
+            
 
 def parse_single_tweet(tweet, word_scores, root, grid_dict):
     '''
@@ -222,7 +211,6 @@ def parse_single_tweet(tweet, word_scores, root, grid_dict):
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
     cell = grid.which_grid_cell(lat, long, grid_dict)
-    # cell = get_grid_cell(lat, long)
     return cell, score
 
 
@@ -244,28 +232,10 @@ def process_score(score, grid_cell, grid_scores):
     modifies the sentiment score of the cell accordingly
     '''
     if grid_cell == "A5" or grid_cell == "B5" or grid_cell == "D1" or grid_cell == "D2":
-        logger.log(
-            "Error - we have an out of bounds cell being counted - {}".format(grid_cell))
+        logger.log("Error - we have an out of bounds cell being counted - {}".format(grid_cell))
     grid_scores[grid_cell]['score'] += score
     grid_scores[grid_cell]['count'] += 1
 
-
-def get_grid_cell(x, y):
-    '''
-    Determines which grid cell a given point (represented by a latitude and longitude) belongs to.
-    '''
-    if y > Y_MIN or y < Y_MAX or x < X_MIN or x > X_MAX or (y > -37.8 and x > 145.3) or (y < -37.95 and x < 145):
-        return None  # Out of bounds - not in Melbourne
-    else:
-        y_index = math.floor(abs(y - Y_MIN) / INTERVAL)
-        x_index = math.floor(abs(x - X_MIN) / INTERVAL)
-        if x_index > 4 or y_index > 3:
-            logger.log_error(
-                "Error occurred when finding the grid cell associated with the point ({},{})".format(x, y))
-            return None
-        else:
-            name = Y_ORDS[y_index] + X_ORDS[x_index]
-            return name
 
 
 def print_results(result):
@@ -288,7 +258,6 @@ def main(argv):
         start_time = time.time()
         logger.log("Starting execution at {}".format(time.asctime()))
         master(comm, fname)
-        logger.log("Finished execution at {} - took {}".format(time.asctime(),
-                                                               time.time() - start_time))
+        logger.log("Finished execution at {} - took {}".format(time.asctime(), time.time() - start_time))
     else:
         slave(comm, fname)
