@@ -1,0 +1,76 @@
+2 node 8 cores
+2021-04-08 20:59:50,899 - INFO - Starting execution at Thu Apr  8 20:59:50 2021
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 0 of 14989216936 of size 1873652117 at worker 0
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 7494608468 of 14989216936 of size 1873652117 at worker 4
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 1873652117 of 14989216936 of size 1873652117 at worker 1
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 3747304234 of 14989216936 of size 1873652117 at worker 2
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 5620956351 of 14989216936 of size 1873652117 at worker 3
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 9368260585 of 14989216936 of size 1873652117 at worker 5
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 11241912702 of 14989216936 of size 1873652117 at worker 6
+2021-04-08 20:59:51,036 - INFO - Commencing processing of chunk beginning at 13115564819 of 14989216936 of size 1873652117 at worker 7
+2021-04-08 21:00:06,959 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:07,073 - INFO - Succesfully parsed file portion 1/2 at worker 1
+2021-04-08 21:00:07,122 - INFO - Succesfully parsed file portion 1/2 at worker 2
+2021-04-08 21:00:07,428 - INFO - Succesfully parsed file portion 1/2 at worker 3
+2021-04-08 21:00:07,467 - INFO - Succesfully parsed file portion 1/2 at worker 0
+2021-04-08 21:00:08,157 - INFO - Succesfully parsed file portion 1/2 at worker 4
+2021-04-08 21:00:08,228 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:08,370 - INFO - Succesfully parsed file portion 1/2 at worker 7
+2021-04-08 21:00:08,722 - INFO - Succesfully parsed file portion 1/2 at worker 5
+2021-04-08 21:00:08,967 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:09,168 - INFO - Succesfully parsed file portion 1/2 at worker 6
+2021-04-08 21:00:24,037 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:24,145 - INFO - Succesfully parsed file portion 2/2 at worker 2
+2021-04-08 21:00:24,280 - INFO - Succesfully parsed file portion 2/2 at worker 3
+2021-04-08 21:00:24,670 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:24,771 - INFO - Succesfully parsed file portion 2/2 at worker 1
+2021-04-08 21:00:24,971 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:25,050 - INFO - Succesfully parsed file portion 2/2 at worker 0
+2021-04-08 21:00:25,690 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 21:00:25,865 - INFO - Succesfully parsed file portion 2/2 at worker 4
+2021-04-08 21:00:25,945 - INFO - Succesfully parsed file portion 2/2 at worker 6
+2021-04-08 21:00:26,799 - INFO - Succesfully parsed file portion 2/2 at worker 7
+2021-04-08 21:00:26,884 - INFO - Succesfully parsed file portion 2/2 at worker 5
+2021-04-08 21:00:26,889 - INFO - Number of processes: 8
+2021-04-08 21:00:26,889 - INFO - Calling slave 1 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 2 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 3 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 4 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 5 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 6 to return data
+2021-04-08 21:00:26,889 - INFO - Calling slave 7 to return data
+2021-04-08 21:00:26,889 - INFO - Succesfully received output from slave 1
+2021-04-08 21:00:26,889 - INFO - Succesfully received output from slave 2
+2021-04-08 21:00:26,890 - INFO - Succesfully received output from slave 3
+2021-04-08 21:00:26,890 - INFO - Succesfully received output from slave 4
+2021-04-08 21:00:26,890 - INFO - Succesfully received output from slave 5
+2021-04-08 21:00:26,890 - INFO - Succesfully received output from slave 6
+2021-04-08 21:00:26,890 - INFO - Succesfully received output from slave 7
+2021-04-08 21:00:26,890 - INFO - Notifying slave 1 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 2 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 3 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 4 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 5 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 6 that the process is complete
+2021-04-08 21:00:26,890 - INFO - Notifying slave 7 that the process is complete
+2021-04-08 21:00:26,890 - INFO - A1, Tweet count: 2754, Sentiment score: 635
+2021-04-08 21:00:26,890 - INFO - A2, Tweet count: 4904, Sentiment score: 3829
+2021-04-08 21:00:26,890 - INFO - A3, Tweet count: 6000, Sentiment score: 2470
+2021-04-08 21:00:26,890 - INFO - A4, Tweet count: 394, Sentiment score: 49
+2021-04-08 21:00:26,890 - INFO - B1, Tweet count: 21230, Sentiment score: 10082
+2021-04-08 21:00:26,890 - INFO - B2, Tweet count: 107764, Sentiment score: 23647
+2021-04-08 21:00:26,890 - INFO - B3, Tweet count: 34331, Sentiment score: 17083
+2021-04-08 21:00:26,890 - INFO - B4, Tweet count: 6763, Sentiment score: 4987
+2021-04-08 21:00:26,890 - INFO - C1, Tweet count: 10643, Sentiment score: 6400
+2021-04-08 21:00:26,890 - INFO - C2, Tweet count: 246543, Sentiment score: 153610
+2021-04-08 21:00:26,890 - INFO - C3, Tweet count: 69888, Sentiment score: 34610
+2021-04-08 21:00:26,890 - INFO - C4, Tweet count: 25963, Sentiment score: 16718
+2021-04-08 21:00:26,890 - INFO - C5, Tweet count: 5581, Sentiment score: 2089
+2021-04-08 21:00:26,890 - INFO - D3, Tweet count: 16316, Sentiment score: 6664
+2021-04-08 21:00:26,890 - INFO - D4, Tweet count: 16665, Sentiment score: 7953
+2021-04-08 21:00:26,890 - INFO - D5, Tweet count: 4705, Sentiment score: 3068
+2021-04-08 21:00:26,890 - INFO - Finished execution at Thu Apr  8 21:00:26 2021 - took 35.99163103103638
+
+real	0m37.624s
+user	0m0.012s
+sys	0m0.019s

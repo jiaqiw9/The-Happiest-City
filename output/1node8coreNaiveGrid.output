@@ -1,0 +1,70 @@
+1 Node 8 Cores
+2021-04-08 19:39:45,135 - INFO - Starting execution at Thu Apr  8 19:39:45 2021
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 0 of 14989216936 of size 1873652117 at worker 0
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 1873652117 of 14989216936 of size 1873652117 at worker 1
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 3747304234 of 14989216936 of size 1873652117 at worker 2
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 5620956351 of 14989216936 of size 1873652117 at worker 3
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 7494608468 of 14989216936 of size 1873652117 at worker 4
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 9368260585 of 14989216936 of size 1873652117 at worker 5
+2021-04-08 19:39:45,391 - INFO - Commencing processing of chunk beginning at 11241912702 of 14989216936 of size 1873652117 at worker 6
+2021-04-08 19:39:45,392 - INFO - Commencing processing of chunk beginning at 13115564819 of 14989216936 of size 1873652117 at worker 7
+2021-04-08 19:40:00,663 - WARNING - Can't open file portion 1/2 at worker 6
+2021-04-08 19:40:01,057 - WARNING - Can't open file portion 1/2 at worker 3
+2021-04-08 19:40:01,648 - WARNING - Can't open file portion 1/2 at worker 0
+2021-04-08 19:40:01,795 - WARNING - Can't open file portion 1/2 at worker 1
+2021-04-08 19:40:01,851 - WARNING - Can't open file portion 1/2 at worker 7
+2021-04-08 19:40:02,038 - WARNING - Can't open file portion 1/2 at worker 4
+2021-04-08 19:40:03,431 - WARNING - Can't open file portion 1/2 at worker 2
+2021-04-08 19:40:05,553 - WARNING - Can't open file portion 1/2 at worker 5
+2021-04-08 19:40:09,941 - WARNING - Can't open file portion 2/2 at worker 2
+2021-04-08 19:40:10,615 - WARNING - Can't open file portion 2/2 at worker 0
+2021-04-08 19:40:13,090 - WARNING - Can't open file portion 2/2 at worker 7
+2021-04-08 19:40:13,251 - WARNING - Can't open file portion 2/2 at worker 5
+2021-04-08 19:40:14,441 - WARNING - Can't open file portion 2/2 at worker 4
+2021-04-08 19:40:18,094 - WARNING - Can't open file portion 2/2 at worker 6
+2021-04-08 19:40:20,634 - INFO - Succesfully parsed file portion 2/2 at worker 3
+2021-04-08 19:40:21,226 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 19:40:21,351 - INFO - Succesfully parsed file portion 2/2 at worker 1
+2021-04-08 19:40:21,355 - INFO - Number of processes: 8
+2021-04-08 19:40:21,355 - INFO - Calling slave 1 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 2 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 3 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 4 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 5 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 6 to return data
+2021-04-08 19:40:21,355 - INFO - Calling slave 7 to return data
+2021-04-08 19:40:21,355 - INFO - Succesfully received output from slave 1
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 2
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 3
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 4
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 5
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 6
+2021-04-08 19:40:21,358 - INFO - Succesfully received output from slave 7
+2021-04-08 19:40:21,358 - INFO - Notifying slave 1 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 2 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 3 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 4 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 5 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 6 that the process is complete
+2021-04-08 19:40:21,358 - INFO - Notifying slave 7 that the process is complete
+2021-04-08 19:40:21,358 - INFO - A1, Tweet count: 2743, Sentiment score: 632
+2021-04-08 19:40:21,358 - INFO - A2, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,358 - INFO - A3, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,358 - INFO - A4, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,358 - INFO - B1, Tweet count: 15485, Sentiment score: 7846
+2021-04-08 19:40:21,358 - INFO - B2, Tweet count: 49247, Sentiment score: -7487
+2021-04-08 19:40:21,358 - INFO - B3, Tweet count: 442, Sentiment score: 284
+2021-04-08 19:40:21,359 - INFO - B4, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,359 - INFO - C1, Tweet count: 10643, Sentiment score: 6400
+2021-04-08 19:40:21,359 - INFO - C2, Tweet count: 163976, Sentiment score: 102203
+2021-04-08 19:40:21,359 - INFO - C3, Tweet count: 9869, Sentiment score: 4105
+2021-04-08 19:40:21,359 - INFO - C4, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,359 - INFO - C5, Tweet count: 0, Sentiment score: 0
+2021-04-08 19:40:21,359 - INFO - D3, Tweet count: 12944, Sentiment score: 5056
+2021-04-08 19:40:21,359 - INFO - D4, Tweet count: 14297, Sentiment score: 6991
+2021-04-08 19:40:21,359 - INFO - D5, Tweet count: 4643, Sentiment score: 3035
+2021-04-08 19:40:21,359 - INFO - Finished execution at Thu Apr  8 19:40:21 2021 - took 36.223915100097656
+
+real	0m38.959s
+user	0m0.015s
+sys	0m0.016s

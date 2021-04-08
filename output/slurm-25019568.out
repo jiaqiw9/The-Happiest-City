@@ -1,0 +1,298 @@
+1 Node 8 Cores
+2021-04-08 20:07:18,418 - INFO - Starting execution at Thu Apr  8 20:07:18 2021
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 0 of 14989216936 of size 1873652117 at worker 0
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 1873652117 of 14989216936 of size 1873652117 at worker 1
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 3747304234 of 14989216936 of size 1873652117 at worker 2
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 5620956351 of 14989216936 of size 1873652117 at worker 3
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 7494608468 of 14989216936 of size 1873652117 at worker 4
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 9368260585 of 14989216936 of size 1873652117 at worker 5
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 11241912702 of 14989216936 of size 1873652117 at worker 6
+2021-04-08 20:07:18,472 - INFO - Commencing processing of chunk beginning at 13115564819 of 14989216936 of size 1873652117 at worker 7
+2021-04-08 20:07:22,660 - WARNING - Could not process tweets in file portion 1/2 at worker 6
+2021-04-08 20:07:23,047 - WARNING - Could not process tweets in file portion 1/2 at worker 3
+2021-04-08 20:07:23,668 - WARNING - Could not process tweets in file portion 1/2 at worker 0
+2021-04-08 20:07:23,770 - WARNING - Could not process tweets in file portion 1/2 at worker 1
+2021-04-08 20:07:23,801 - WARNING - Could not process tweets in file portion 1/2 at worker 7
+2021-04-08 20:07:23,911 - WARNING - Could not process tweets in file portion 1/2 at worker 4
+2021-04-08 20:07:25,390 - WARNING - Could not process tweets in file portion 1/2 at worker 2
+2021-04-08 20:07:27,355 - WARNING - Could not process tweets in file portion 1/2 at worker 5
+2021-04-08 20:07:31,777 - WARNING - Could not process tweets in file portion 2/2 at worker 2
+2021-04-08 20:07:32,301 - WARNING - Could not process tweets in file portion 2/2 at worker 0
+2021-04-08 20:07:32,946 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,947 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,948 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,949 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,950 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,951 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,952 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,953 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,954 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,955 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,955 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:32,955 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:07:33,028 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,029 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,030 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,031 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,032 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,033 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,034 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,035 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,036 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,037 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,038 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,039 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:07:33,752 - WARNING - Error occurred when finding the grid cell associated with the point (145.2811,-38.1)
+2021-04-08 20:07:34,841 - WARNING - Could not process tweets in file portion 2/2 at worker 7
+2021-04-08 20:07:35,120 - WARNING - Could not process tweets in file portion 2/2 at worker 5
+2021-04-08 20:07:35,943 - WARNING - Could not process tweets in file portion 2/2 at worker 4
+2021-04-08 20:07:39,547 - WARNING - Could not process tweets in file portion 2/2 at worker 6
+2021-04-08 20:07:42,171 - INFO - Succesfully parsed file portion 2/2 at worker 3
+2021-04-08 20:07:43,190 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:07:43,362 - INFO - Succesfully parsed file portion 2/2 at worker 1
+2021-04-08 20:07:43,369 - INFO - Number of processes: 8
+2021-04-08 20:07:43,369 - INFO - Calling slave 1 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 2 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 3 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 4 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 5 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 6 to return data
+2021-04-08 20:07:43,369 - INFO - Calling slave 7 to return data
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 1
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 2
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 3
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 4
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 5
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 6
+2021-04-08 20:07:43,370 - INFO - Succesfully received output from slave 7
+2021-04-08 20:07:43,370 - INFO - Notifying slave 1 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 2 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 3 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 4 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 5 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 6 that the process is complete
+2021-04-08 20:07:43,370 - INFO - Notifying slave 7 that the process is complete
+2021-04-08 20:07:43,370 - INFO - A1, Tweet count: 2743, Sentiment score: 632
+2021-04-08 20:07:43,370 - INFO - A2, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - A3, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - A4, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - B1, Tweet count: 15485, Sentiment score: 7846
+2021-04-08 20:07:43,370 - INFO - B2, Tweet count: 49244, Sentiment score: -7488
+2021-04-08 20:07:43,370 - INFO - B3, Tweet count: 445, Sentiment score: 285
+2021-04-08 20:07:43,370 - INFO - B4, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - C1, Tweet count: 10643, Sentiment score: 6400
+2021-04-08 20:07:43,370 - INFO - C2, Tweet count: 163289, Sentiment score: 101765
+2021-04-08 20:07:43,370 - INFO - C3, Tweet count: 10459, Sentiment score: 4443
+2021-04-08 20:07:43,370 - INFO - C4, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - C5, Tweet count: 0, Sentiment score: 0
+2021-04-08 20:07:43,370 - INFO - D3, Tweet count: 12943, Sentiment score: 5036
+2021-04-08 20:07:43,370 - INFO - D4, Tweet count: 14105, Sentiment score: 7086
+2021-04-08 20:07:43,370 - INFO - D5, Tweet count: 4705, Sentiment score: 3108
+2021-04-08 20:07:43,370 - INFO - Finished execution at Thu Apr  8 20:07:43 2021 - took 24.952295303344727
+
+real	0m27.515s
+user	0m0.014s
+sys	0m0.018s

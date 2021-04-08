@@ -1,0 +1,782 @@
+1 Node 8 Cores
+2021-04-08 20:26:44,619 - INFO - Starting execution at Thu Apr  8 20:26:44 2021
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 0 of 14989216936 of size 1873652117 at worker 0
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 1873652117 of 14989216936 of size 1873652117 at worker 1
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 3747304234 of 14989216936 of size 1873652117 at worker 2
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 5620956351 of 14989216936 of size 1873652117 at worker 3
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 7494608468 of 14989216936 of size 1873652117 at worker 4
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 9368260585 of 14989216936 of size 1873652117 at worker 5
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 11241912702 of 14989216936 of size 1873652117 at worker 6
+2021-04-08 20:26:44,676 - INFO - Commencing processing of chunk beginning at 13115564819 of 14989216936 of size 1873652117 at worker 7
+2021-04-08 20:27:07,209 - INFO - Succesfully parsed file portion 1/2 at worker 3
+2021-04-08 20:27:07,259 - INFO - Succesfully parsed file portion 1/2 at worker 1
+2021-04-08 20:27:07,406 - INFO - Succesfully parsed file portion 1/2 at worker 0
+2021-04-08 20:27:07,440 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:07,546 - INFO - Succesfully parsed file portion 1/2 at worker 7
+2021-04-08 20:27:07,818 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:07,894 - INFO - Succesfully parsed file portion 1/2 at worker 2
+2021-04-08 20:27:07,957 - INFO - Succesfully parsed file portion 1/2 at worker 4
+2021-04-08 20:27:08,047 - INFO - Succesfully parsed file portion 1/2 at worker 5
+2021-04-08 20:27:08,460 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:08,570 - INFO - Succesfully parsed file portion 1/2 at worker 6
+2021-04-08 20:27:13,922 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,923 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,924 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,925 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,926 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,927 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,928 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,929 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,930 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,931 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:13,931 - WARNING - Error occurred when finding the grid cell associated with the point (145.133,-38.1)
+2021-04-08 20:27:14,002 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,003 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,004 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,005 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,006 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,007 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,008 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,009 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,010 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,011 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,012 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,013 - WARNING - Error occurred when finding the grid cell associated with the point (145.183,-38.1)
+2021-04-08 20:27:14,708 - WARNING - Error occurred when finding the grid cell associated with the point (145.2811,-38.1)
+2021-04-08 20:27:16,423 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,423 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,424 - WARNING - Could not process tweet
+2021-04-08 20:27:16,424 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,425 - WARNING - Could not process tweet
+2021-04-08 20:27:16,425 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,425 - WARNING - Could not process tweet
+2021-04-08 20:27:16,425 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,425 - WARNING - Could not process tweet
+2021-04-08 20:27:16,499 - WARNING - Error occurred when finding the grid cell associated with the point (145.45,-37.8)
+2021-04-08 20:27:16,499 - WARNING - Error occurred when finding the grid cell associated with the point (145.45,-37.8)
+2021-04-08 20:27:16,592 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,593 - WARNING - Could not process tweet
+2021-04-08 20:27:16,593 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,594 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,594 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,595 - WARNING - Could not process tweet
+2021-04-08 20:27:16,595 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,596 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,596 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,597 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,597 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,598 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,598 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,599 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,599 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,600 - WARNING - Could not process tweet
+2021-04-08 20:27:16,600 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,601 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,601 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,602 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,602 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,603 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,603 - WARNING - Could not process tweet
+2021-04-08 20:27:16,604 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,604 - WARNING - Could not process tweet
+2021-04-08 20:27:16,604 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,604 - WARNING - Could not process tweet
+2021-04-08 20:27:16,604 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,604 - WARNING - Could not process tweet
+2021-04-08 20:27:16,604 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,604 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,605 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,605 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,606 - WARNING - Could not process tweet
+2021-04-08 20:27:16,606 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,607 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,607 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,608 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,608 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,609 - WARNING - Could not process tweet
+2021-04-08 20:27:16,609 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,610 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,610 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,611 - WARNING - Could not process tweet
+2021-04-08 20:27:16,611 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,612 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,612 - WARNING - Could not process tweet
+2021-04-08 20:27:16,613 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,613 - WARNING - Could not process tweet
+2021-04-08 20:27:16,613 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,613 - WARNING - Could not process tweet
+2021-04-08 20:27:16,613 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,613 - WARNING - Could not process tweet
+2021-04-08 20:27:16,613 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,613 - WARNING - Could not process tweet
+2021-04-08 20:27:16,613 - INFO - Error - we have an out of bounds cell being counted - B5
+2021-04-08 20:27:16,613 - WARNING - Could not process tweet
+2021-04-08 20:27:17,307 - INFO - Error - we have an out of bounds cell being counted - A5
+2021-04-08 20:27:17,307 - WARNING - Could not process tweet
+2021-04-08 20:27:17,307 - INFO - Error - we have an out of bounds cell being counted - A5
+2021-04-08 20:27:17,307 - WARNING - Could not process tweet
+2021-04-08 20:27:17,307 - INFO - Error - we have an out of bounds cell being counted - A5
+2021-04-08 20:27:17,307 - WARNING - Could not process tweet
+2021-04-08 20:27:23,002 - INFO - Succesfully parsed file portion 2/2 at worker 3
+2021-04-08 20:27:23,229 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:23,337 - INFO - Succesfully parsed file portion 2/2 at worker 2
+2021-04-08 20:27:23,773 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:23,890 - INFO - Succesfully parsed file portion 2/2 at worker 0
+2021-04-08 20:27:23,989 - INFO - Succesfully parsed file portion 2/2 at worker 6
+2021-04-08 20:27:24,001 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:24,074 - INFO - Succesfully parsed file portion 2/2 at worker 1
+2021-04-08 20:27:24,491 - WARNING - Issue with searching tweet for co-ordinates
+2021-04-08 20:27:24,591 - INFO - Succesfully parsed file portion 2/2 at worker 4
+2021-04-08 20:27:24,873 - INFO - Succesfully parsed file portion 2/2 at worker 7
+2021-04-08 20:27:24,940 - INFO - Succesfully parsed file portion 2/2 at worker 5
+2021-04-08 20:27:24,947 - INFO - Number of processes: 8
+2021-04-08 20:27:24,947 - INFO - Calling slave 1 to return data
+2021-04-08 20:27:24,947 - INFO - Calling slave 2 to return data
+2021-04-08 20:27:24,947 - INFO - Calling slave 3 to return data
+2021-04-08 20:27:24,948 - INFO - Calling slave 4 to return data
+2021-04-08 20:27:24,948 - INFO - Calling slave 5 to return data
+2021-04-08 20:27:24,948 - INFO - Calling slave 6 to return data
+2021-04-08 20:27:24,948 - INFO - Calling slave 7 to return data
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 1
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 2
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 3
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 4
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 5
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 6
+2021-04-08 20:27:24,948 - INFO - Succesfully received output from slave 7
+2021-04-08 20:27:24,948 - INFO - Notifying slave 1 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 2 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 3 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 4 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 5 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 6 that the process is complete
+2021-04-08 20:27:24,948 - INFO - Notifying slave 7 that the process is complete
+2021-04-08 20:27:24,948 - INFO - A1, Tweet count: 2754, Sentiment score: 635
+2021-04-08 20:27:24,948 - INFO - A2, Tweet count: 4886, Sentiment score: 3822
+2021-04-08 20:27:24,948 - INFO - A3, Tweet count: 5996, Sentiment score: 2462
+2021-04-08 20:27:24,948 - INFO - A4, Tweet count: 413, Sentiment score: 58
+2021-04-08 20:27:24,948 - INFO - B1, Tweet count: 21208, Sentiment score: 10079
+2021-04-08 20:27:24,948 - INFO - B2, Tweet count: 107139, Sentiment score: 23278
+2021-04-08 20:27:24,948 - INFO - B3, Tweet count: 34877, Sentiment score: 17367
+2021-04-08 20:27:24,948 - INFO - B4, Tweet count: 6641, Sentiment score: 4969
+2021-04-08 20:27:24,948 - INFO - C1, Tweet count: 10643, Sentiment score: 6400
+2021-04-08 20:27:24,948 - INFO - C2, Tweet count: 245785, Sentiment score: 153131
+2021-04-08 20:27:24,948 - INFO - C3, Tweet count: 70511, Sentiment score: 34970
+2021-04-08 20:27:24,948 - INFO - C4, Tweet count: 25988, Sentiment score: 16731
+2021-04-08 20:27:24,948 - INFO - C5, Tweet count: 5577, Sentiment score: 2074
+2021-04-08 20:27:24,948 - INFO - D3, Tweet count: 16313, Sentiment score: 6637
+2021-04-08 20:27:24,948 - INFO - D4, Tweet count: 16478, Sentiment score: 8055
+2021-04-08 20:27:24,948 - INFO - D5, Tweet count: 4767, Sentiment score: 3141
+2021-04-08 20:27:24,948 - INFO - Finished execution at Thu Apr  8 20:27:24 2021 - took 40.3298499584198
+
+real	0m42.938s
+user	0m0.011s
+sys	0m0.019s

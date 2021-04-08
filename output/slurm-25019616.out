@@ -1,0 +1,129 @@
+1 Node 8 Cores
+2021-04-08 20:13:57,627 - INFO - Starting execution at Thu Apr  8 20:13:57 2021
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 0 of 14989216936 of size 1873652117 at worker 0
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 1873652117 of 14989216936 of size 1873652117 at worker 1
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 3747304234 of 14989216936 of size 1873652117 at worker 2
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 5620956351 of 14989216936 of size 1873652117 at worker 3
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 7494608468 of 14989216936 of size 1873652117 at worker 4
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 9368260585 of 14989216936 of size 1873652117 at worker 5
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 11241912702 of 14989216936 of size 1873652117 at worker 6
+2021-04-08 20:13:57,673 - INFO - Commencing processing of chunk beginning at 13115564819 of 14989216936 of size 1873652117 at worker 7
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[144.593741856'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[150.520928608'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 294, in main
+    master(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 73, in master
+    final_result = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[-75.280284'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[144.593741856'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[101.7017441'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[-1.95729593780907'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[-122.514926'
+Traceback (most recent call last):
+  File "run.py", line 6, in <module>
+    parser.main(sys.argv[1:])
+  File "/home/bingx1/comp90024ass1/parser.py", line 298, in main
+    slave(comm, fname)
+  File "/home/bingx1/comp90024ass1/parser.py", line 130, in slave
+    output = parse_tweets(file_name, rank, comm, size)
+  File "/home/bingx1/comp90024ass1/parser.py", line 193, in parse_tweets
+    find_and_process_tweets(buffer, word_scores, grid_scores, root)
+  File "/home/bingx1/comp90024ass1/parser.py", line 205, in find_and_process_tweets
+    cell, score = parse_single_tweet(tweet, word_scores, root, grid_scores)
+  File "/home/bingx1/comp90024ass1/parser.py", line 226, in parse_single_tweet
+    long = float(coordinates.group(1))
+ValueError: could not convert string to float: b'[[-93.329515'
+srun: error: spartan-bm121: tasks 1-3: Exited with exit code 1
+srun: error: spartan-bm121: tasks 4-6: Exited with exit code 1
+srun: error: spartan-bm121: tasks 0,7: Exited with exit code 1
+
+real	0m11.973s
+user	0m0.014s
+sys	0m0.017s
