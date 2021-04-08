@@ -16,10 +16,10 @@ INTERVAL = 0.15
 # Regex for Tweet text.
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
 # Regex to find individual tweets.
-TWEET_REGEX = b'doc":.*?"text".*?".*?"(?:,).*"attributes".*?'
+TWEET_REGEX = b'doc":.*?"text".*?".*?"(?:,).*"lang".*?,'
 # Regex to extract the coordinate from a tweet.
 COORD_REGEX = b'"geo".*?(?:"coordinates":)\[(.*?),(.*?)\]'
-# Regex for each doc
+
 
 # MAX buffer size
 MAX_BUFF = int((2**31 - 1) / 2)
@@ -51,6 +51,8 @@ def setup_AFINN(rank, comm):
     return word_scores
 
 # Bottleneck not here
+
+
 def setup_grid_scores():
     grid_scores = {}
     keys = ["A1", "A2", "A3", "A4", 'B1', 'B2',
@@ -76,7 +78,6 @@ def master(comm, file_name):
 
     complete_jobs(comm, size - 1)
     print_results(final_result)
-    return
 
 
 def complete_jobs(comm, n_slaves):
@@ -86,7 +87,7 @@ def complete_jobs(comm, n_slaves):
     for i in range(n_slaves):
         slave_rank = i + 1
         comm.send('complete', dest=slave_rank, tag=slave_rank)
-        # print("Notifying slave {} that the process is complete".format(slave_rank))
+        print("Notifying slave {} that the process is complete".format(slave_rank))
 
 
 # Bottleneck not hjere
@@ -94,26 +95,25 @@ def collect_results(comm):
     n_slaves = comm.Get_size() - 1
     # Initialize a fresh dictionary to store the results from all the slaves in
     slave_results = setup_grid_scores()
-    
+
     for i in range(n_slaves):
         slave_rank = i + 1
-        comm.send('return', dest = slave_rank, tag = slave_rank)
-        # print("Calling slave {} to return data".format(slave_rank))
-    
+        comm.send('return', dest=slave_rank, tag=slave_rank)
+        print("Calling slave {} to return data".format(slave_rank))
+
     for i in range(n_slaves):
         slave_rank = i + 1
         slave_output = comm.recv(source=slave_rank, tag=0)
         add_slave_output(slave_output, slave_results)
-        # print("Succesfully received output from slave {}".format(slave_rank))
+        print("Succesfully received output from slave {}".format(slave_rank))
 
     return slave_results
 
-# Bottleneck not here
+
 def add_slave_output(slave_output, slave_results):
     for cell in slave_output:
         slave_results[cell]['count'] += slave_output[cell]['count']
         slave_results[cell]['score'] += slave_output[cell]['score']
-    return
 
 
 def slave(comm, file_name):
@@ -132,7 +132,7 @@ def slave(comm, file_name):
 
 
 def open_file(comm, fname):
-    print("trying to open ", fname)
+    # print("trying to open ", fname)
     file = MPI.File.Open(comm, fname, MPI.MODE_RDONLY)
     file_size = MPI.File.Get_size(file)
     return file, file_size
@@ -150,7 +150,7 @@ def parse_tweets(file_name: str, rank, comm):
     # print("{} is {} bytes.".format(file_name, file_size))
 
     # Chunk of file to read
-    if (size == 1 or size -1 != rank):
+    if (size == 1 or size - 1 != rank):
         chunk_size = int(math.ceil(file_size/size))
         chunk_offset = chunk_size * rank  # This is where the chunk to be read starts
     else:
@@ -160,26 +160,31 @@ def parse_tweets(file_name: str, rank, comm):
         # chunk_size, chunk_offset))
     # Find how many buffers are needed to read the chunk in
     n_buffers = int(math.ceil(chunk_size / MAX_BUFF))
-    buffer_size = int(math.ceil(chunk_size / n_buffers))
     # print("Number of buffers to use: {}. Buffer size: {}".format(
-        # n_buffers, buffer_size))
+    # n_buffers, buffer_size))
     for i in range(n_buffers):
-        # print("in n_buffers")
-        buffer = bytearray(buffer_size)
-        buffer_offset = chunk_offset + (i * buffer_size)
-        # # Read the file into the buffer
-        file.Read_at_all(buffer_offset, buffer)
-        # # Find all the tweets contained in the buffer:
-        tweets = re.findall(TWEET_REGEX, buffer, re.I)
-        # # Process each tweet
-        for tweet in tweets:
-            cell, score = parse_single_tweet(tweet, word_scores)
-            process_score(score, cell, grid_scores)
-            # print(" Cell: ", cell, " Sentiment score: ", score)
+        try:
+            # print("in n_buffers")
+            buffer_size = int(math.ceil(chunk_size / n_buffers))
+            buffer = bytearray(buffer_size)
+            buffer_offset = chunk_offset + (i * buffer_size)
+            # # Read the file into the buffer
+            file.Read_at_all(buffer_offset, buffer)
+            # # Find all the tweets contained in the buffer:
+            tweets = re.findall(TWEET_REGEX, buffer, re.I) ##bottleneck here
+            # # # Process each tweet
+            for tweet in tweets:
+                cell, score = "c2"
+                cell, score = parse_single_tweet(tweet, word_scores)
+                process_score(score, cell, grid_scores)
+                # print(" Cell: ", cell, " Sentiment score: ", score)
+        except:
+            print("Error opening file")
     file.Close()
     return grid_scores
 
-# Bottleneck not here
+
+
 def parse_single_tweet(tweet, word_scores):
     '''
     Extracts the contents and co-ordinates of the tweet and parses the result
@@ -191,21 +196,21 @@ def parse_single_tweet(tweet, word_scores):
     long = float(coordinates.group(1))
     lat = float(coordinates.group(2))
     cell = get_grid_cell(lat, long)
-    # print(decoded)
-    # print(long, lat)
     return cell, score
+    # return "C2", 1
 
 
-def calculate_score(word_scores: dict, tweet: re.Match) -> int:
+# -------CURRENT BOTTLENECK -> algorithm is O(N K) where K is the number of words in AFFIN ----
+def calculate_score(word_scores: dict, tweet: str) -> int:
     '''
     Calculates the sentiment score of a tweet
     '''
-    score = 0
-    for word in word_scores:
-        if word in tweet:
-            score += word_scores[word]
-    return score
-
+    # score = 0
+    # for word in word_scores:
+    #     if word in tweet:
+    #         score += word_scores[word]
+    # return score
+    return 1
 
 def process_score(score, grid_cell, grid_scores):
     '''
@@ -216,7 +221,6 @@ def process_score(score, grid_cell, grid_scores):
         print("Error - we have an out of bounds cell being counted")
     grid_scores[grid_cell]['score'] += score
     grid_scores[grid_cell]['count'] += 1
-    return
 
 
 def get_grid_cell(x, y):
@@ -235,9 +239,12 @@ def get_grid_cell(x, y):
             name = Y_ORDS[y_index] + X_ORDS[x_index]
             return name
 
+
 def print_results(result):
     for cell in result:
-        print("{}, Tweet count: {}, Sentiment score: {}".format(cell, result[cell]['count'], result[cell]['score']))
+        print("{}, Tweet count: {}, Sentiment score: {}".format(
+            cell, result[cell]['count'], result[cell]['score']))
+
 
 def main(argv):
     fname = argv[0]
@@ -247,6 +254,7 @@ def main(argv):
         start_time = time.time()
         print("Starting execution at {}".format(time.asctime()))
         master(comm, fname)
-        print("Finished execution at {} - took {}".format(time.asctime(), time.time() - start_time))
+        print("Finished execution at {} - took {}".format(time.asctime(),
+                                                          time.time() - start_time))
     else:
         slave(comm, fname)
