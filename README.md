@@ -31,6 +31,7 @@ Pattern matching is implemented using a modified version of **Aho-Corasick**. As
 To run this code locally, first ensure you have some form of mpi installed (i.e. openMPI, mpich)
 On linux this can be done easily through a package manager:
 
+
 ```bash
 sudo apt install mpich
 ```
