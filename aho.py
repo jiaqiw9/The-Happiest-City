@@ -57,10 +57,23 @@ def aho_find_all(s, root):
 
 
 def valid_right(s, i):
-    return i + 1 == len(s) or s[i+1] == " " or s[i+1] == "," or s[i+1] == "!" or s[i+1] == "?" or s[i+1] == "." or s[i+1] == "'" or s[i+1] == "'"
+    return i + 1 == len(s) or s[i+1] == " " or s[i+1] == "," or s[i+1] == "!" or s[i+1] == "?" or s[i+1] == "." or s[i+1] == "'" or s[i+1] == '"'
 
 def valid_left(s, i, pattern):
     return i - len(pattern) == 0 or s[i-len(pattern)] == " "
 
 def valid_pattern(s, i, pattern):
+    '''
+    Checks if a match is an exact match - i.e. there is a " " or nothing to the left of the match, and there is a " ", nothing, or {, . ! ? ' "}
+    '''
     return valid_left(s, i, pattern) and valid_right(s, i)
+
+# patterns = ['he', 'ashe']
+
+# str = 'hi ashe'
+
+# root = aho_create_statemachine(patterns)
+
+# matches = aho_find_all(str, root)
+
+# print(matches)
