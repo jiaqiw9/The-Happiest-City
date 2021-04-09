@@ -48,7 +48,7 @@ with open('melbGrid.json') as melbGrid:
         cell_score[feature["properties"]["id"]] = {"tweets":0, "score":0}
 
 # read and process json
-data_set = 'bigTwitter.json'
+data_set = 'tinyTwitter.json'
 line_count = 0
 with open(data_set) as Twitter:
     for line in Twitter:
