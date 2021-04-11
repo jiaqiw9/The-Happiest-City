@@ -11,8 +11,7 @@ score for the given cells and hence to calculate the area of Melbourne that has 
 
 ### Versions
 
-  - v1.0 - Aho Corasick & master collects from slaves using p2p communication
-  - v1.1 - Aho Corasick & collection of results is done using mpi.gather 
+  - v1.0 - Bing's implementation
 
 ### Overview
 

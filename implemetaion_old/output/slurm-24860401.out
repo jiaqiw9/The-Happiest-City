@@ -1,0 +1,4 @@
+1 node and 1 core
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 24860401 ON spartan-bm087 CANCELLED AT 2021-04-03T21:44:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 24860401.0 ON spartan-bm087 CANCELLED AT 2021-04-03T21:44:39 DUE TO TIME LIMIT ***

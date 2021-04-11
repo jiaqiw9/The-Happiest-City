@@ -23,7 +23,7 @@ def make_grid_dict():
 def which_grid_cell(x, y, grid_dict):
     cell = None
     for c in grid_dict:
-        if grid_dict[c]['xmin'] <= x <= grid_dict[c]['xmax'] and grid_dict[c]['ymin'] <= y <= grid_dict[c]['ymax']:
+        if grid_dict[c]['xmin'] < x <= grid_dict[c]['xmax'] and grid_dict[c]['ymin'] < y <= grid_dict[c]['ymax']:
             cell = c
             break
     return cell
