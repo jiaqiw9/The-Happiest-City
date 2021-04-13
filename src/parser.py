@@ -1,7 +1,7 @@
 from mpi4py import MPI
 import re, time, math
-import aho, grid
-from logger import Logger
+import src.aho as aho, src.grid as grid
+from src.logger import Logger
 
 # Regex for Tweet text.
 TEXT_REGEX = b'(?:"text":")(.*?)(?:")'
