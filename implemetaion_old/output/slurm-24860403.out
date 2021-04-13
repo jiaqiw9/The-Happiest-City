@@ -1,6 +1,0 @@
-1 node and 8 core
-{'A1': {'tweets': 2752, 'score': 697}, 'A2': {'tweets': 4904, 'score': 3625}, 'A3': {'tweets': 5824, 'score': 2305}, 'A4': {'tweets': 381, 'score': 32}, 'B1': {'tweets': 21232, 'score': 9474}, 'B2': {'tweets': 107386, 'score': 23313}, 'B3': {'tweets': 34494, 'score': 16793}, 'B4': {'tweets': 6643, 'score': 4858}, 'C1': {'tweets': 10530, 'score': 6049}, 'C2': {'tweets': 246828, 'score': 152731}, 'C3': {'tweets': 69901, 'score': 34195}, 'C4': {'tweets': 26097, 'score': 16370}, 'C5': {'tweets': 5581, 'score': 2290}, 'D3': {'tweets': 16220, 'score': 6358}, 'D4': {'tweets': 16536, 'score': 7821}, 'D5': {'tweets': 4705, 'score': 3093}}
-
-real	213m10.262s
-user	0m0.011s
-sys	0m0.016s
